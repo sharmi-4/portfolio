@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharmila S | Portfolio</title>
+    <!--=================== Google Fonts ====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!--=================== Remixicons ====================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=================== SwiperJS CSS ====================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!--=================== Main CSS ====================-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!--=================== Header ====================-->
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav__brand">
+                    <i class="ri-code-s-slash-line"></i>Sharmila<Span>S</Span>
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">Qualification</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#project" class="nav__link">Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#footer"  class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__toggle">
+                    <i id="nav-toggle" class="ri-menu-3-line"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--=================== Main ====================-->
+    <main class="main">
+        <!--=================== Hero ====================-->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="d-grid hero__wrapper">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Hi, I am Sharmila,<br></h1>
+                        <h2>Tester</h2>
+                        <p class="hero__description">A highly motivated professional with over 3.5 years of experience in manual testing in the capital markets domain, now transitioning to the AI technology space. I am passionate about leveraging my expertise in testing and AI/ML to contribute to innovative solutions.</p>
+                    </div>
+                    <img src="assets/img/sharmila-pic.jpeg" alt="Girija S" class="hero__img">
+                </div>
+            </div>
+        </section>
+
+        <!--=================== About ====================-->
+        <section id="about" class="section about">
+            <style>
+
+                .about__wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 2rem;
+                    background: #40abc9;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+        
+                .about__content {
+                    margin: 0;
+                    font-size: 1.8rem;
+                    line-height: 1.8;
+                    color: #86e4e6;
+                }
+        
+                .section__header {
+                    margin-bottom: 2rem;
+                    text-align: center;
+                }
+        
+                .section__title {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    color: #333;
+                    margin-bottom: 0.5rem;
+                }
+        
+                .section__subtitle {
+                    font-size: 1.5rem;
+                    color: #777;
+                }
+        
+                .about__description {
+                    font-size: 1.8rem;
+                    color: #106865;
+                    text-align: justify;
+                    margin-top: 1rem;
+                }
+        
+                @media (min-width: 768px) {
+                    .about__wrapper {
+                        padding: 3rem;
+                    }
+        
+                    .about__description {
+                        font-size: 1.5rem;
+                    }
+                }
+            </style>
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">About Me</h2>
+                    <span class="section__subtitle">Who I Am</span>
+                </div>
+                <div class="d-grid about__wrapper">
+                    <div class="about__content">
+                        <h3 class="about__description">With a passion for technology, I am fueled by curiosity and a drive to continuously improve. I thrive on tackling challenges and transforming ideas into impactful solutions. Dedicated to lifelong learning, I aim to leverage my skills to address real-world problems and make meaningful contributions to the tech industry. Eager to embrace new opportunities, I am committed to personal and professional growth, collaborating with innovative teams, and delivering exceptional results.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <style>
+                .skills__container {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 40px;
+                }
+        
+                .skills__box {
+                    background: #5fc7bf;
+                    border: 3px solid #ddd;
+                    border-radius: 10px;
+                    padding: 40px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s;
+                }
+        
+                .skills__box:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+                }
+        
+                .skills__box > strong {
+                    font-size: 2rem;
+                    color: #333;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+        
+                .skills__box ul {
+                    margin-top: 10px;
+                    padding-left: 20px;
+                    font-size: 1.5rem;
+                    line-height: 1.7;
+                }
+        
+                .skills__box ul li {
+                    margin-bottom: 8px;
+                    position: relative;
+                }
+        
+                .skills__box ul li::before {
+                    content: "\2022"; /* Bullet point */
+                    color: #4CAF50; /* Custom color */
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+            </style>
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Skills</h2>
+                    <span class="section__subtitle">Technical Expertise</span>
+                </div>
+                <div class="skills__container">
+                    <div class="skills__box">
+                        <strong>AI/ML Technologies:</strong>
+                        <ul>
+                            <li>Python, Pandas, NumPy, scikit-learn, TensorFlow, NLP</li>
+                            <li>Data Preprocessing, Feature Engineering, Model Evaluation</li>
+                            <li>Supervised Learning, Unsupervised Learning, Deep Learning</li>
+                        </ul>
+                    </div>
+                    <div class="skills__box">
+                        <strong>Domain Knowledge:</strong>
+                        <ul>
+                            <li>Capital Markets, Financial Analytics, Risk Management</li>
+                            <li>Algorithmic Trading, Fraud Detection</li>
+                            <li>Financial Data Analysis, Time-Series Forecasting, Portfolio Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="skills__box">
+                        <strong>Testing & QA Skills:</strong>
+                        <ul>
+                            <li>Manual Testing, Test Case Development, Test Execution</li>
+                            <li>Bug Tracking (JIRA, HP ALM)</li>
+                            <li>Functional, Regression, System, and UAT Testing</li>
+                        </ul>
+                    </div>
+                    <div class="skills__box">
+                        <strong>Programming Languages, Tools & Frameworks:</strong>
+                        <ul>
+                            <li>Python, C, C++, Generative AI, VBA Macro</li>
+                            <li>JIRA, HP ALM, Git, GitHub</li>
+                            <li>TensorFlow Serving, MLflow</li>
+                        </ul>
+                    </div>
+                    <div class="skills__box">
+                        <strong>Soft Skills:</strong>
+                        <ul>
+                            <li>Problem Solving</li>
+                            <li>Attention to Detail</li>
+                            <li>Communication</li>
+                            <li>Agile Methodologies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!--=================== Qualification ====================-->
+        <section id="qualification" class="qualification__wrapper">
+            <div class="container">
+                <h3 class="qualification__name"><i class="ri-briefcase-fill"></i> Professional Experience</h3>
+                <div class="qualification__content">
+                    <!-- Experience 1 -->
+                    <div class="qualification__item">
+                        <h3 class="qualification__title">Manual Tester - Tata Consultancy Services</h3>
+                        <div class="qualification__description">
+                            <ul>
+                                <li>Managed manual testing activities for BNP Paribas’ capital markets systems, including trading platforms, risk management tools, and client-facing applications.</li>
+                                <li>Collaborated with cross-functional teams (business analysts, developers, and QA teams) to ensure quality deliverables.</li>
+                                <li>Conducted functional, regression, system, and user acceptance testing (UAT) of capital markets applications.</li>
+                                <li>Identified and reported bugs, ensuring timely resolution through JIRA and facilitating smooth software releases.</li>
+                                <li>Gained exposure to financial data processing, risk management systems, and regulatory compliance in capital markets.</li>
+                            </ul>
+                        </div>
+                        <h3 class="qualification__title">Key Achievements</h3>
+                        <div class="qualification__description">
+                        <ul>
+                            <li>Successfully tested and validated new features in BNP Paribas’ trading applications, improving overall system stability by 20%.</li>
+                            <li>Received Innovation Spark Award for the collaboration with developers to identify AI and machine learning opportunities for improving the risk management system.</li>
+                            <li>Worked on multiple process improvements for my project, such as file validator tools and building the Test Plan upload tool in JIRA.</li>
+                        </ul>
+                    </div>
+                        <span class="qualification__date">October 2021 - Present | Siruseri, Chennai</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+                <!--============== Education ============-->
+                <section class="qualification__wrapper">
+                <div class="container">
+                    <h3 class="qualification__name"><i class="ri-booklet-fill"></i> Education</h3>
+                    <div class="qualification__content">
+                        <!-- Education 1 -->
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">B.E. Electrical and Electronics Engineering</h3>
+                            <p class="qualification__description">Graduated with a B.E. in Electrical and Electronics Engineering from National Engineering College, Kovilpatti, Tamil Nadu.</p>
+                            <span class="qualification__date">2020 - 2024</span>
+                        </div>
+                    </div>
+                    <div class="qualification__footer">
+                        <p class="qualification__footer-text">See my full resume</p>
+                        <a href="./assets/certificates/Sharmi Resume.pdf" download class="btn btn--primary">Resume</a>
+                    </div>
+                </div>
+        </section>
+
+        <!--=================== Projects ====================-->
+        <section id="project" class="section project">
+            <div class="container">
+                <h3 class="qualification__name"><i class="ri-booklet-fill"></i> Projects</h3>
+                <div class="qualification__content">
+                    <!-- Project 1 -->
+                    <div class="qualification__item">
+                        <h3 class="qualification__title">AI-Powered Stock Price Prediction System</h3>
+                        <p class="qualification__description">
+                            <strong>Technologies:</strong> Python, scikit-learn, Pandas, Matplotlib, Seaborn<br>
+                            • Developed a machine learning model to predict stock prices using historical data.<br>
+                            • Pre-processed financial datasets, implemented feature engineering, and used regression algorithms to predict future stock prices.<br>
+                            • Evaluated model performance using metrics such as RMSE and MAE, achieving an accuracy of over 85%.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!--=================== footer ====================-->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="d-grid footer__wrapper">
+                <div class="footer__content">
+                    <h4 class="footer__title">Follow Me</h4>
+                    <ul class="footer__social-list">
+                        <!-- <li class="footer__social-item">
+                            <a href="https://leetcode.com/u/Giri_50/" target="_blank" class="footer__social-link">
+                                <img style="width:30px; height:25px"src="data:image/png;base64,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">
+                            </a>
+                        </li> -->
+                        <li class="footer__social-item">
+                            <a href="https://www.linkedin.com/in/sharmila-s-791247196?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="footer__social-link">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="https://github.com/sharmi-4" targAet="_blank" class="footer__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h4 class="footer__title">Email Me</h4>
+                    <a href="https://mail.google.com/mail/u/0/#compose" class="footer__contact">sharmiapr04@gmail.com</a>
+                </div>
+                <div class="footer__content">
+                    <h4 class="footer__title">Call Me</h4>
+                    <a href="#" class="footer__contact">8838824761</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--=================== SwiperJS  ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--=================== ScrollReveal ==================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=================== Main JS ====================-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
